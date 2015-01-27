@@ -1,4 +1,4 @@
-LICENCE
+LICENSE
 =======
 
 Copyright (c) 2015 Joshua Barrow
