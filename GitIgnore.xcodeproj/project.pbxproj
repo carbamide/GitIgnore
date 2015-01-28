@@ -13,6 +13,7 @@
 		2922404D1A780C09009641D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2922404B1A780C09009641D4 /* Main.storyboard */; };
 		292240591A780C0A009641D4 /* GitIgnoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292240581A780C0A009641D4 /* GitIgnoreTests.swift */; };
 		29B1D70A1A78510800A77657 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B1D7091A78510800A77657 /* Strings.swift */; };
+		29E0A97D1A7980C900B60BF4 /* ViewGitIgnoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E0A97C1A7980C900B60BF4 /* ViewGitIgnoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		292240571A780C0A009641D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		292240581A780C0A009641D4 /* GitIgnoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitIgnoreTests.swift; sourceTree = "<group>"; };
 		29B1D7091A78510800A77657 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		29E0A97C1A7980C900B60BF4 /* ViewGitIgnoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewGitIgnoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +81,11 @@
 			children = (
 				292240451A780C09009641D4 /* AppDelegate.swift */,
 				292240471A780C09009641D4 /* ViewController.swift */,
+				29E0A97C1A7980C900B60BF4 /* ViewGitIgnoreViewController.swift */,
 				292240491A780C09009641D4 /* Images.xcassets */,
 				2922404B1A780C09009641D4 /* Main.storyboard */,
-				292240431A780C09009641D4 /* Supporting Files */,
 				29B1D7091A78510800A77657 /* Strings.swift */,
+				292240431A780C09009641D4 /* Supporting Files */,
 			);
 			path = GitIgnore;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			files = (
 				292240481A780C09009641D4 /* ViewController.swift in Sources */,
 				29B1D70A1A78510800A77657 /* Strings.swift in Sources */,
+				29E0A97D1A7980C900B60BF4 /* ViewGitIgnoreViewController.swift in Sources */,
 				292240461A780C09009641D4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

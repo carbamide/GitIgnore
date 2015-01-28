@@ -1,8 +1,8 @@
 //
-//  File.swift
+//  ViewGitIgnoreViewController.swift
 //  GitIgnore
 //
-//  Created by Joshua Barrow on 1/27/15.
+//  Created by Joshua Barrow on 1/28/15.
 //  Permission is hereby granted, free of charge, to any person obtaining a copy of this
 //  software and associated documentation files (the "Software"), to deal in the Software
 //  without restriction, including without limitation the rights to use, copy, modify, merge,
@@ -19,24 +19,23 @@
 //  IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
-import Foundation
+import Cocoa
 
-struct Strings {
-    static let TextFieldPlaceholder = "Project type / environment"
-    static let TextFieldTooltip = "Separate entries by single space, such as \"Xcode iOS Objective-C\""
-    static let ButtonTooltip = "Create .gitignore"
-    static let FileName = ".gitignore"
-    static let SaveOrViewTitle = "Save or view?"
-    static let SaveOrViewInformativeText = "Would you like to save the .gitignore or view it?"
-    static let Save = "Save"
-    static let View = "View"
-    static let Cancel = "Cancel"
-}
-
-struct Segues {
-    static let ShowGitIgnoreFile = "SHOW_GIT_IGNORE_FILE"
-}
-
-struct Url {
-    static let BaseUrl = "https://www.gitignore.io/api/"
+/**
+*  Class Responsible for displaying the gitignore file from gitignore.io
+*/
+class ViewGitIgnoreViewController: NSViewController {
+    
+    /// The gitignore file data as returned from the backend
+    var gitIgnoreFileData : NSData?
+    
+    @IBOutlet var gitIgnoreTextView: NSTextView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let dataString = NSString(data: self.gitIgnoreFileData!, encoding: NSUTF8StringEncoding)
+        
+        self.gitIgnoreTextView.string = dataString
+    }
 }
