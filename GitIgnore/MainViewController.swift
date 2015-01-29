@@ -21,7 +21,7 @@
 
 import Cocoa
 
-class ViewController: NSViewController {
+class MainViewController: NSViewController {
 
     /// The NSTextField that the user types the search parameters into
     @IBOutlet weak var textField: NSTextField!
