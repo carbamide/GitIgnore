@@ -76,10 +76,8 @@ class MainViewController: NSViewController {
             let session = NSURLSession.sharedSession()
             
             var task = session.dataTaskWithRequest(request, completionHandler: { data, response, error in
-                if !(error != nil) {
-                    dispatch_async(dispatch_get_main_queue()) {
-                        self.saveOrView(data, downloadError: error)
-                    }
+                dispatch_async(dispatch_get_main_queue()) {
+                    self.saveOrView(data, downloadError: error)
                 }
             })
             
